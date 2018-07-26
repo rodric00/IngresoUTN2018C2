@@ -1,18 +1,38 @@
 function mostrar()
+
+do
+{	
+	numero=parseInt(prompt("Ingrese un mumero"));
+	contador++
+	
+	if (contador==1)
+{
+		maximo=numero;
+		minimo=numero;
+}
+	
+	
+	if (numero>maximo)
+{
+	maximo=numero;
+
+}
+
+
+    if (numero<minimo)
 {
 
-	var contador=0;
-	// declarar variables
-	
-	var respuesta='si';
+	minimo=numero;
 
-	while(respuesta!='no')
-	{
-		
-	
-	}
+}
 
+respuesta=prompt("desea continuar"); 
 
+while (respuesta=="si");
+
+document.getElementById("maximo").value=maximo;
+
+document.getElementById("minimo").value=minimo;
 
 
 }//FIN DE LA FUNCIÓN
